@@ -26,27 +26,59 @@
     <p class="username">@abkabkabir</p>
     <h1>Some day soon</h1>
 
-    <table background="tablebg.jpg" width="500px" border="1">
-        <tr>
-            <td colspan="2" align="center">Money</td>
-        </tr>
-        <tr>
-            <td>book</td>
-            <td>school</td>
-        </tr>
-        <tr>
-            <td>daddy</td>
-            <td>mummy</td>
-        </tr>
-        <tr>
-            <td>brother</td>
-            <td>sisters</td>
-        </tr>
-        <tr>
-            <td>man</td>
-            <td>woaman</td>
-        </tr>
-    </table>
+    <form name="Employment" action="send.php" method="post">
+        <table width="50%" border="1" cellspacing="2" cellpadding="2">
+            <tr>
+                <td>Employment Application</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" maxlength="50" /></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lname" maxlength="50" /></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="position">
+              <option value="AC">Accountant</option>
+              <option value="BA">Banker</option>
+              <option value="CL">Clerk</option>
+              <option value="SE">Security</option>
+            </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience Level</td>
+                <td>
+                    <select name="experience">
+              <option value="EL">Entry Level</option>
+              <option value="SE">Some Experience</option>
+              <option value="VE">Very experienced</option>
+            </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
 </body>
 
 </html>
