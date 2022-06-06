@@ -9,14 +9,21 @@
             font font-weight: bold;
         }
         
-        .username {
-            font-size: 50px;
+        td {
             color: brown;
         }
         
-        p {
+        .employment {
             font-size: 10;
-            color: aquamarine;
+            color: red;
+        }
+        
+        .checkbox {
+            color: blue;
+        }
+        
+        .radio {
+            color: purple;
         }
     </style>
 </head>
@@ -29,8 +36,7 @@
     <form name="Employment" action="send.php" method="post">
         <table width="50%" border="1" cellspacing="2" cellpadding="2">
             <tr>
-                <td>Employment Application</td>
-                <td></td>
+                <td class="employment">Employment Application</td>
             </tr>
             <tr>
                 <td>First Name</td>
@@ -62,20 +68,33 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>Job type</td>
+                <td class="checkbox">
+                    <input type="checkbox" name="ft" < />Full-Time
+                    <input type="checkbox" name="pt" < />Part-Time
+                    <input type="checkbox" name="ct" < />Contract
+                </td>
+            </tr>
+            <tr>
+                <td>Employment Status</td>
+                <td class="radio">
+                    <input type="radio" name="estatus" value="employed" />Employed
+                    <input type="radio" name="estatus" value="unemployed" />Unemployed
+                    <input type="radio" name="estatus" value="Student" />Student
+                </td>
+            </tr>
+            <tr>
+                <td>Additional comments</td>
+                <td>
+                    <textarea name="comments" cols="45" rows="5"></textarea>
+                </td>
             </tr>
             <tr>
                 <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="submit" name="submit" value="Submit" />
+                    <input type="reset" name="reset" value="Reset" />
+                </td>
             </tr>
         </table>
     </form>
