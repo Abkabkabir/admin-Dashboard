@@ -1,0 +1,56 @@
+.menu {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding: 1px;
+    width: max-content;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 50px;
+}
+
+.menu li:hover {
+    transform: translateY(-5px);
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green:hover~.bg {
+    background-color: rgb(13, 75, 67);
+}
+
+.red:hover~.bg {
+    background-color: purple;
+}
+
+.blue:hover~.bg {
+    background-color: chocolate;
+}
+
+.bg {
+    content: "";
+    z-index: -10;
+    display: block;
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}

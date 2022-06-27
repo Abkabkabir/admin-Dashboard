@@ -1,103 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My first webpage</title>
-    <style>
-        h1 {
-            font-size: large;
-            font font-weight: bold;
-        }
-        
-        td {
-            color: brown;
-        }
-        
-        .employment {
-            font-size: 10;
-            color: red;
-        }
-        
-        .checkbox {
-            color: blue;
-        }
-        
-        .radio {
-            color: purple;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <p>my tweet</p>
-    <p class="username">@abkabkabir</p>
-    <h1>Some day soon</h1>
-
-    <form name="Employment" action="send.php" method="post">
-        <table width="50%" border="1" cellspacing="2" cellpadding="2">
-            <tr>
-                <td class="employment">Employment Application</td>
-            </tr>
-            <tr>
-                <td>First Name</td>
-                <td><input type="text" name="fname" maxlength="50" /></td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text" name="lname" maxlength="50" /></td>
-            </tr>
-            <tr>
-                <td>Position</td>
-                <td>
-                    <select name="position">
-              <option value="AC">Accountant</option>
-              <option value="BA">Banker</option>
-              <option value="CL">Clerk</option>
-              <option value="SE">Security</option>
-            </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Experience Level</td>
-                <td>
-                    <select name="experience">
-              <option value="EL">Entry Level</option>
-              <option value="SE">Some Experience</option>
-              <option value="VE">Very experienced</option>
-            </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Job type</td>
-                <td class="checkbox">
-                    <input type="checkbox" name="ft" < />Full-Time
-                    <input type="checkbox" name="pt" < />Part-Time
-                    <input type="checkbox" name="ct" < />Contract
-                </td>
-            </tr>
-            <tr>
-                <td>Employment Status</td>
-                <td class="radio">
-                    <input type="radio" name="estatus" value="employed" />Employed
-                    <input type="radio" name="estatus" value="unemployed" />Unemployed
-                    <input type="radio" name="estatus" value="Student" />Student
-                </td>
-            </tr>
-            <tr>
-                <td>Additional comments</td>
-                <td>
-                    <textarea name="comments" cols="45" rows="5"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" name="submit" value="Submit" />
-                    <input type="reset" name="reset" value="Reset" />
-                </td>
-            </tr>
-        </table>
-    </form>
+    <ul class="menu">
+        <li class="red"><a href="#">RED</a></li>
+        <li class="green"><a href="#">GREEN</a></li>
+        <li class="blue"><a href="#">BLUE</a></li>
+        <li class="bg"></li>
+    </ul>
+    <script src="index.js"></script>
 </body>
 
 </html>
